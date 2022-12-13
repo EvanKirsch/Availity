@@ -10,9 +10,9 @@ Written in java 11. Nothing to crazy here so you should be good compiling/runnin
   1. `java LispValidator <expression>`
 
 - Build/Run Example:
-1. `cd Repos/Availity/lispValidator/src`
-1. `javac *.java`
-1. `java LispValidator "(define (state-create-empty) '())"`
+  1. `cd Repos/Availity/lispValidator/src`
+  2. `javac *.java`
+  3. `java LispValidator "(define (state-create-empty) '())"`
 
 - File Flag `-f`
     - To make testing easier I've also added a 'file' flag `-f`. This can allow a text file to be passed as a parameter rather than a string.
