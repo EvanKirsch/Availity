@@ -1,4 +1,4 @@
-public class BenefitsIncomingDTO {
+public class BenefitsIncomingDTO implements Comparable<BenefitsIncomingDTO> {
   private String userId;
   private String firstName;
   private String lastName;
@@ -45,4 +45,21 @@ public class BenefitsIncomingDTO {
     InsuranceCompany = insuranceCompany;
   }
 
+  @Override
+  public String toString() {
+    return "BenefitsIncomingDTO{" +
+        "userId='" + userId + '\'' +
+        ", firstName='" + firstName + '\'' +
+        ", lastName='" + lastName + '\'' +
+        ", version=" + version +
+        ", InsuranceCompany='" + InsuranceCompany + '\'' +
+        '}';
+  }
+
+  @Override
+  public int compareTo(BenefitsIncomingDTO that) {
+    String thisFullName = this.getLastName() + this.getFirstName();
+    String thatFullName = that.getLastName() + that.getFirstName();
+    return thisFullName.compareTo(thatFullName);
+  }
 }
