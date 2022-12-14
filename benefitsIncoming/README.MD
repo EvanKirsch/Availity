@@ -8,6 +8,7 @@ Written in java 11. Nothing to crazy here so you should be good compiling/runnin
 
 - Running
     1. `java BenefitsIncoming <file>`
+    1. the output's location is `/benefitsIncoming/test/<Insurance Company Name>.out`
 
 - Build/Run Example:
     1. `cd Repos/Availity/benefitsIncoming/src`
